@@ -5,7 +5,7 @@ import { ToursData } from './Data'
 
 
 const Tours = () => {
-  let cont = 0;
+  
   return (
     <div>
     <div><section className="section" id="tours">
@@ -21,7 +21,6 @@ const Tours = () => {
         ToursData.map((tour) => {
         const {id, title, text, country, days, cost, date, img} = tour;
         console.log(img)
-        cont ++;
         return (
           <article className="tour-card" key={id}>
             <div className="tour-img-container">
